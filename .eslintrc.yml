@@ -1,0 +1,180 @@
+env:
+  node: true
+  browser: true
+  es2022: true
+  jest: true
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:import/react
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:jest/recommended
+  - plugin:jest-dom/recommended
+  - plugin:testing-library/react
+plugins:
+  - react
+  - jest
+  - jest-dom
+  - testing-library
+settings:
+  react:
+    version: detect
+  import/resolver:
+    node:
+      extensions: [ '.js', '.jsx', '.json' ]
+parserOptions:
+  sourceType: module
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+
+rules:
+
+  # whitespace
+  indent: [ error, 2 ]
+  no-multi-spaces: error
+  no-multiple-empty-lines: [ error, { max: 1, maxEOF: 1, maxBOF: 0 } ]
+  no-trailing-spaces: error
+  space-in-parens: error
+  array-bracket-spacing: [ error, always ]
+  object-curly-spacing: [ error, always ]
+  block-spacing: error
+  comma-spacing: [ error, { before: false, after: true } ]
+  key-spacing: error
+  keyword-spacing: error
+  space-before-blocks: [ error, always ]
+  space-infix-ops: error
+  spaced-comment: [ error, always, { exceptions: [ '*', '-', '=' ], "markers": [ '/' ] } ]
+  no-spaced-func: error
+  space-before-function-paren: [ error, { named: never, anonymous: always, asyncArrow: always } ]
+  arrow-spacing: [ error, { before: true, after: true } ]
+
+  # punctuation
+  semi: [ error, never ]
+  quotes: [ error, single ]
+  comma-dangle: [ error, always-multiline ]
+  no-template-curly-in-string: error
+  no-extra-parens: error
+  arrow-parens: [ error, as-needed ]
+  jsx-quotes: [ error, prefer-single ]
+
+  # possible errors
+  require-atomic-updates: error
+
+  # best practices
+  no-console: [ error, { allow: [ warn, error ] } ]
+  no-warning-comments: error
+  array-callback-return: error
+  no-return-await: error
+  require-await: error
+  no-self-compare: error
+  no-sequences: error
+  no-throw-literal: error
+  prefer-promise-reject-errors: error
+  prefer-regex-literals: error
+  camelcase: error
+  func-style: error
+  no-bitwise: error
+  no-multi-assign: error
+  no-negated-condition: error
+  no-duplicate-imports: error
+  prefer-rest-params: error
+  prefer-spread: error
+  no-unused-vars: [ error, { varsIgnorePattern: _ } ]
+
+  # complexity
+  max-len: [ error, { code: 120, tabWidth: 2 } ]
+  max-lines: [ error, 100 ]
+  max-statements: [ error, 7 ]
+  max-statements-per-line: [ error, { max: 3 } ]
+  max-params: [ error, 4 ]
+  max-nested-callbacks: [ error, 4 ]
+  max-depth: [ error, 2 ]
+  complexity: [ error, 5 ]
+
+  # react
+  react/display-name: off
+  react/jsx-tag-spacing: error
+  react/jsx-curly-spacing: [ error, { when: never, children: true } ]
+  react/react-in-jsx-scope: off
+
+  # testing
+  jest/consistent-test-it: [ error, { fn: it } ]
+  jest/max-expects: [ error, { max: 3 } ]
+  jest/max-nested-describe: [ error, { max: 3 } ]
+  jest/no-conditional-in-test: error
+  jest/no-disabled-tests: error
+  jest/no-duplicate-hooks: error
+  jest/no-export: error
+  jest/no-focused-tests: error
+  jest/no-hooks: off # we do not disallow hooks
+  jest/no-large-snapshots: error
+  jest/no-restricted-jest-methods: off # we do not restrict any jest methods
+  jest/no-restricted-matchers: [ error, { toBeFalsy: null, toBeTruthy: null } ]
+  jest/no-test-prefixes: off # we do not limit prefixes
+  jest/no-test-return-statement: error
+  jest/prefer-called-with: off # we do not prefer calledWith
+  jest/prefer-comparison-matcher: error
+  jest/prefer-each: error
+  jest/prefer-equality-matcher: error
+  jest/prefer-expect-assertions: off # we do not prefer expect assertions
+  jest/prefer-expect-resolves: error
+  jest/prefer-hooks-in-order: error
+  jest/prefer-hooks-on-top: error
+  jest/prefer-lowercase-title: [ error, { ignore: [ describe ] } ]
+  jest/prefer-mock-promise-shorthand: error
+  jest/prefer-snapshot-hint: error
+  jest/prefer-spy-on: off # we do not prefer spyOn
+  jest/prefer-strict-equal: off # we do not prefer strictEqual
+  jest/prefer-to-be: error
+  jest/prefer-to-contain: error
+  jest/prefer-to-have-length: error
+  jest/prefer-todo: error
+  jest/require-hook: error
+  jest/require-to-throw-message: error
+  jest/require-top-level-describe: error
+
+  testing-library/await-async-query: error
+  testing-library/await-async-utils: error
+  testing-library/await-fire-event: off # not relevant for React Testing Library
+  testing-library/consistent-data-testid: [ error, { testIdPattern: .+, testIdAttribute: [ data-testid ] } ]
+  testing-library/no-await-sync-events: [ error, { eventModules: [ fire-event ] } ]
+  testing-library/no-await-sync-query: error
+  testing-library/no-container: error
+  testing-library/no-debugging-utils: error
+  testing-library/no-dom-import: error
+  testing-library/no-global-regexp-flag-in-query: error
+  testing-library/no-manual-cleanup: error
+  testing-library/no-node-access: error
+  testing-library/no-promise-in-fire-event: error
+  testing-library/no-render-in-setup: error
+  testing-library/no-unnecessary-act: error
+  testing-library/no-wait-for-empty-callback: error
+  testing-library/no-wait-for-multiple-assertions: error
+  testing-library/no-wait-for-side-effects: error
+  testing-library/no-wait-for-snapshot: error
+  testing-library/prefer-explicit-assert: error
+  testing-library/prefer-find-by: error
+  testing-library/prefer-presence-queries: error
+  testing-library/prefer-query-by-disappearance: error
+  testing-library/prefer-screen-queries: error
+  testing-library/prefer-user-event: error
+  testing-library/prefer-wait-for: error
+  testing-library/render-result-naming-convention: error
+
+overrides:
+  - files: [ '*.jsx' ]
+    rules:
+      no-extra-parens: off
+      max-lines: [ error, 150 ] # regular value * 1.5 (jsx)
+  - files: [ '*.test.js' ]
+    rules:
+      max-lines: [ error, 200 ] # regular value * 2 (test)
+      max-statements: [ error, 10 ]
+  - files: [ '*.test.jsx' ]
+    rules:
+      no-extra-parens: off
+      max-lines: [ error, 300 ] # regular value * 2 (jsx, test)
+      max-statements: [ error, 10 ]
+      react/prop-types: off

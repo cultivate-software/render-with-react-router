@@ -1,0 +1,23 @@
+branches:
+  - main
+preset: angular
+plugins:
+  -
+    - '@semantic-release/commit-analyzer'
+    - preset: angular
+      releaseRules:
+        - type: docs
+          release: patch
+        - scope: no-release
+          release: false
+  - '@semantic-release/release-notes-generator'
+  - '@semantic-release/github'
+  - '@semantic-release/npm'
+  -
+    - '@semantic-release/git'
+    - assets:
+        - CHANGELOG.md
+        - package.json
+        - package-lock.json
+        - npm-shrinkwrap.json
+        - docs/coverage-badge.svg
