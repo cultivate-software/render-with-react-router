@@ -357,7 +357,7 @@ Maps routes to page names.
 
 ## Issues
 
-Looking to contribute? Checkout this project's [Issues](https://github.com/cultivate-software/render-with-react-router/issues?q=is%3Aissue+is%3Aopen) on GitHub.
+Looking to contribute? PRs are welcome. Checkout this project's [Issues](https://github.com/cultivate-software/render-with-react-router/issues?q=is%3Aissue+is%3Aopen) on GitHub for existing issues.
 
 ### 🐛 Bugs
 
