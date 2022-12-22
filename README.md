@@ -3,7 +3,6 @@
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/cultivate-software/render-with-react-router/release.yml?branch=main)
 ![Code Coverage](docs/coverage-badge.svg)
 ![npm (scoped)](https://img.shields.io/npm/v/@render-with/react-router)
-![npm](https://img.shields.io/npm/dw/@render-with/react-router)
 ![NPM](https://img.shields.io/npm/l/@render-with/react-router)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-bright%20green)
 
