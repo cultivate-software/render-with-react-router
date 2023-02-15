@@ -65,13 +65,13 @@
     "release": "semantic-release"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "peerDependencies": {
     "react-router-dom": "^6.8.1"
   },
   "dependencies": {
-    "@render-with/decorators": "^1.0.1",
+    "@render-with/decorators": "^2.0.0",
     "prop-types": "^15.8.1"
   },
   "devDependencies": {
@@ -82,7 +82,7 @@
     "@babel/preset-react": "7.18.6",
     "@semantic-release/git": "10.0.1",
     "@testing-library/jest-dom": "5.16.5",
-    "@testing-library/react": "12.1.5",
+    "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jest": "27.2.1",
@@ -94,7 +94,7 @@
     "make-coverage-badge": "1.2.0",
     "open-cli": "7.1.0",
     "react-router-dom": "6.8.1",
-    "semantic-release": "19.0.5"
+    "semantic-release": "20.1.0"
   },
   "publishConfig": {
     "access": "public"
