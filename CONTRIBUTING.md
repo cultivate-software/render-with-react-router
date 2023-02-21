@@ -19,7 +19,7 @@ Thanks for being willing to contribute!
 > git branch --set-upstream-to=upstream/main main
 > ```
 >
-> This will add the original repository as a "remote" called "upstream," Then
+> This will add the original repository as a "remote" called "upstream". Then
 > fetch the git information from that remote, then set your local `main` branch
 > to use the upstream main branch whenever you run `git pull`. Then you can make
 > all of your pull request branches based on this `main` branch. Whenever you
@@ -35,6 +35,6 @@ If your PR introduced some changes in the API, you are more than welcome to modi
 
 ## Help needed
 
-Please checkout the [the open issues](https://github.com/cultivate-software/render-with-react-router/issues)
+Please check out the [open issues](https://github.com/cultivate-software/render-with-react-router/issues) page on GitHub.
 
 Also, please watch the repo and respond to questions/bug reports/feature requests! Thanks!
