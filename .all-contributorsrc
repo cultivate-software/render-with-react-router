@@ -1,0 +1,45 @@
+{
+  "projectName": "render-with-decorators",
+  "projectOwner": "cultivate-software",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "skipCi": false,
+  "contributorsPerLine": 7,
+  "linkToUsage": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "davidbieder",
+      "name": "David Bieder",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9366720?v=4",
+      "profile": "https://github.com/davidbieder",
+      "contributions": []
+    },
+    {
+      "login": "cultivate(software)",
+      "name": "cultivate(software)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31018345?v=4",
+      "profile": "https://cultivate.software",
+      "contributions": []
+    },
+    {
+      "login": "mauricereichelt",
+      "name": "Maurice Reichelt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31188606?v=4",
+      "profile": "https://github.com/mauricereichelt",
+      "contributions": []
+    },
+    {
+      "login": "jeromeweiss",
+      "name": "Jerome Weiß",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59569084?v=4",
+      "profile": "https://github.com/jeromeweiss",
+      "contributions": []
+    }
+  ]
+}
