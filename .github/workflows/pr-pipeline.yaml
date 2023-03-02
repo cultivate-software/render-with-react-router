@@ -5,19 +5,20 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone project
+      - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup node
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
-
       - name: Install dependencies
         run: npm ci
-
-      - name: Linting
+      - name: Lint
         run: npm run lint:ci
-
-      - name: Coverage
+      - name: Test
         run: npm run cover:ci
+      - name: Build
+        run: npm run build
