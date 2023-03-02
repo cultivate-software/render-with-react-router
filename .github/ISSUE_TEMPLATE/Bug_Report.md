@@ -24,6 +24,8 @@ about: Bugs, missing documentation, or unexpected behavior 🤔.
   <!-- are you using jest, mocha, puppeteer, ava? And what version? -->
 - DOM Environment:
   <!-- If you're using jsdom (the default with jest), what version? Otherwise, what browser and version are you running tests in? -->
+- React version:
+- Node version:
 
 <!--
 Keep in mind that if you're using a version of node we don't support that
@@ -37,8 +39,8 @@ for the supported version.
 
 ### Relevant code or config:
 
-```js
-var your => (code) => here;
+```javascript
+const your = code => here
 ```
 
 ### What you did:
