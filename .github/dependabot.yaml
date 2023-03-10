@@ -16,5 +16,4 @@ updates:
       time: '03:49' # GitHub Actions gets congested at the full hour
       timezone: Europe/Berlin
     commit-message:
-      prefix: 'fix'
       prefix-development: 'build'
