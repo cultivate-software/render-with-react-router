@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '03:49' # GitHub Actions gets congested at the full hour
+      timezone: Europe/Berlin
+    commit-message:
+      prefix: 'build'
+
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '03:49' # GitHub Actions gets congested at the full hour
+      timezone: Europe/Berlin
+    commit-message:
+      prefix: 'fix'
+      prefix-development: 'build'
