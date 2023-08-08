@@ -75,7 +75,7 @@
   "devDependencies": {
     "@babel/cli": "7.22.10",
     "@babel/core": "7.22.9",
-    "@babel/node": "7.22.6",
+    "@babel/node": "7.22.10",
     "@babel/preset-env": "7.22.9",
     "@babel/preset-react": "7.22.5",
     "@render-with/decorators": "3.0.0",
