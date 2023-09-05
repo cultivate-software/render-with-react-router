@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Setup Node.js
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Merge PR
         uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
