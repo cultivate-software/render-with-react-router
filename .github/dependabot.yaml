@@ -4,8 +4,7 @@ updates:
     directory: '/'
     schedule:
       interval: daily
-      time: '03:49' # GitHub Actions gets congested at the full hour
-      timezone: Europe/Berlin
+      time: '03:49'
     commit-message:
       prefix: 'build'
 
@@ -13,8 +12,7 @@ updates:
     directory: '/'
     schedule:
       interval: daily
-      time: '03:49' # GitHub Actions gets congested at the full hour
-      timezone: Europe/Berlin
+      time: '03:49'
     commit-message:
       prefix: 'fix'
       prefix-development: 'build'
