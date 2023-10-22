@@ -1,6 +1,6 @@
 import { render } from '@render-with/decorators'
 import { screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { userEvent } from '@testing-library/user-event'
 import { Link } from 'react-router-dom'
 import { Page, withLocation, withRouter, withRouting } from './index'
 
