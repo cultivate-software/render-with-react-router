@@ -1,6 +1,6 @@
 {
   "name": "@render-with/react-router",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Render decorators for components under test that require a React Router or Routes.",
   "keywords": [
     "testing",
