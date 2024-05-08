@@ -94,7 +94,7 @@
     "open-cli": "8.0.0",
     "prop-types": "15.8.1",
     "react-router-dom": "6.23.0",
-    "semantic-release": "22.0.12"
+    "semantic-release": "23.0.8"
   },
   "publishConfig": {
     "access": "public"
