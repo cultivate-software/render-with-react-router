@@ -65,10 +65,10 @@
     "release": "semantic-release"
   },
   "engines": {
-    "node": ">=18"
+    "node": "^18.20.0 || >=20.0.0"
   },
   "peerDependencies": {
-    "@render-with/decorators": "^4.0.0",
+    "@render-with/decorators": "^5.0.0",
     "prop-types": "^15.8.1",
     "react-router-dom": "^6.8.1"
   },
