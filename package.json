@@ -77,7 +77,7 @@
     "@babel/core": "7.27.1",
     "@babel/node": "7.26.0",
     "@babel/preset-env": "7.26.9",
-    "@babel/preset-react": "7.26.3",
+    "@babel/preset-react": "7.27.1",
     "@render-with/decorators": "4.0.0",
     "@semantic-release/git": "10.0.1",
     "@testing-library/jest-dom": "6.6.3",
