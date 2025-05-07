@@ -81,7 +81,7 @@
     "@render-with/decorators": "4.0.0",
     "@semantic-release/git": "10.0.1",
     "@testing-library/jest-dom": "6.6.3",
-    "@testing-library/react": "15.0.7",
+    "@testing-library/react": "16.3.0",
     "@testing-library/user-event": "14.6.1",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jest": "28.11.0",
